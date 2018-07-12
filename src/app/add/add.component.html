@@ -1,0 +1,21 @@
+<p>
+  Name &nbsp; &nbsp;&nbsp;:&nbsp;
+  <input type="text" [(ngModel)]="name">
+  <br>
+  <br> Country  &nbsp;:&nbsp;
+  <input type="text" [(ngModel)]="country">
+  <br>
+  <br> Gender&nbsp;&nbsp;&nbsp;:&nbsp;MALE
+  <input type="radio" value="male" [checked]="gender===male" [(ngModel)]="gender" name="selector"> FEMALE
+  <input type="radio" value="female" [checked]="gender===female" [(ngModel)]="gender" name="selector">
+  <br>
+  <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="button" style="color: black; background: aqua;" id="submit" value="submit" (click)="add()">
+</p>
+
+
+<!-- <div *ngIf="test">
+   asasdsa
+</div>
+
+<button (click)="test = !test">Test</button> -->
